@@ -1,0 +1,25 @@
+<%= form_for(@unicorn) do |f| %>
+  <% if @unicorn.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@unicorn.errors.count, "error") %> prohibited this unicorn from being saved:</h2>
+
+      <ul>
+      <% @unicorn.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :butt %><br>
+    <%= f.text_field :butt %>
+  </div>
+  <div class="field">
+    <%= f.label :farts %><br>
+    <%= f.text_area :farts %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
