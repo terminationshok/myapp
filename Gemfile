@@ -27,7 +27,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # authentication and user management
-gem 'authlogic'
+#gem 'authlogic'
+gem 'devise'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
